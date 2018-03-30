@@ -1,0 +1,54 @@
+header, aside, main, footer {
+  border: 1px solid cyan;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+}
+
+.centre-panels {
+  display: inline-flex;
+}
+
+aside {
+  width: 15vw;
+  height: 75vh;
+}
+
+main {
+  width: 85vw;
+  height: 75vh;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+}
+
+header .main-menu, header .sub-menu {
+  list-style-type: none;
+}
+
+.logo {
+  display: block;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+.main-menu, li {
+  display: inline;
+  align-items: baseline;
+  padding-right: 3em;
+  border: 1px solid magenta;
+}
+
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-left: 5.9em;
+  display: none;
+}
