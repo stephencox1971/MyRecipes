@@ -1,10 +1,14 @@
-header, aside, main, footer {
-  border: 1px solid cyan;
+* {
+  max-width: 1920px;
+}
+
+header, aside, footer {
+  border: 1px solid green;
 }
 
 header {
   width: 100%;
-  height: 15vh;
+  height: 20vh;
 }
 
 .centre-panels {
@@ -13,17 +17,19 @@ header {
 
 aside {
   width: 15vw;
-  height: 75vh;
+  /* height: 75vh; */
+  padding: 1em;
 }
 
 main {
   width: 85vw;
-  height: 75vh;
+  border: solid 1px pink;
+  background-color: orange;
 }
 
 footer {
   width: 100%;
-  height: 10vh;
+  height: 20vh;
 }
 
 header .main-menu, header .sub-menu {
@@ -51,4 +57,13 @@ header .main-menu, header .sub-menu {
   position: absolute;
   margin-left: 5.9em;
   display: none;
+}
+
+.recipe-copy {
+  column-count: 2;
+  column-gap: normal;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 65vh;
+  margin: 3em;
+  padding: 2em;
 }
