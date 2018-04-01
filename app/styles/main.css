@@ -23,8 +23,9 @@ aside {
 
 main {
   width: 85vw;
+  height: 75vh;
   border: solid 1px pink;
-  background-color: orange;
+  /* background-color: orange; */
 }
 
 footer {
@@ -57,6 +58,16 @@ header .main-menu, header .sub-menu {
   position: absolute;
   margin-left: 5.9em;
   display: none;
+}
+
+.main-image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* background-image:
+  url("../app/img/main.jpg"); */
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
 }
 
 .recipe-copy {
