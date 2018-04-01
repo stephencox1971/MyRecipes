@@ -1,3 +1,13 @@
+.menu, li {
+  display:flex;
+  flex-direction: row;
+  list-style: none;
+}
+.submenu {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
 .recipe-text {
   column-count: 2;
 }
