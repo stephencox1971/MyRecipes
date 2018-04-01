@@ -19,69 +19,76 @@ HEADER
     <header>
       <div class="row">
         <div class="col-md-12">
-          <img class="img-fluid" src="../app/img/myrecipes_logo.png" alt="My Recipes Logo" height="55%" width="55%">
+          <img class="img-fluid mx-auto" id="main-logo" src="../app/img/myrecipes_logo.png" alt="My Recipes Logo" height="35%" width="35%">
           <nav>
-            <ul class="menu">
-      				<li><a href="#">Home</a></li>
-      				<li class="expand">
-      					<a href="#">Recipes</a>
-      					<ul class="submenu">
-      						<li>Chilli Con Carne</li>
-      						<li>Felafal</li>
-      						<li>Pasta with Tomato Sauce</li>
-      						<li>Guacamole</li>
-                  <li>Chilli Spice Mix</li>
-      					</ul>
-      				</li>
-      				<li><a href="#">Blog</a></li>
-      			</ul>
-        </nav>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Recipes</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Chilli Con Carne</a>
+                  <a class="dropdown-item" href="#">Felafal</a>
+                  <a class="dropdown-item" href="#">Pasta With Tomato Sauce</a>
+                  <a class="dropdown-item" href="#">Guacamole</a>
+                  <a class="dropdown-item" href="#">Chilli Spice Mix</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="About" href="#">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-  </div>
-  </header>
+    </header>
 
-  <!--*********************************************************
+    <!--*********************************************************
 MAIN CONTENT
 **********************************************************-->
 
-  <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12">
-          <article>
-            <hr>
-            <img class="img-fluid" src="../app/img/main.jpg" width="900px" alt="Chillis and Garlic">
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <article>
+              <hr>
+              <img class="img-fluid" id="main-image" src="../app/img/main.jpg" width="600px" alt="Chillis and Garlic">
 
-            <div class="recipe-copy" id="Recipe=Copy">
-              <h2>Chilli Con Carne</h2>
-              <div class="recipe-text">
-              <h3>Ingredients</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h3>Instructions</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+              <div class="recipe-copy" id="Recipe=Copy">
+                <h2 class="text-center">Chilli Con Carne</h2>
+                <div class="recipe-text">
+                  <h3 class="text-center">Ingredients</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <h3 class="text-center">Instructions</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="container" id="Recipe-Images">
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="recipe-images">
+                      <img class="img-fluid" id="chilli" src="../app/img/Chili.jpg" width="160px" alt="Chilli Con Carne">
+                      <img class="img-fluid" id="felafal" src="../app/img/felafal.jpg" width="160px" alt="Felafel">
+                      <img class="img-fluid" id="pasta" src="../app/img/Penne.jpg" width="160px" alt="Pasta with Tomato Sauce">
+                      <img class="img-fluid" id="guac" src="../app/img/guacamole.jpg" width="160px" alt="Guacamole">
+                      <img class="img-fluid" id ="spicemix" src="../app/img/chillimix.jpg" width="160px" alt="Chilli Spice Mix">
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
-            <hr>
-            <div class="container" id="Recipe-Images">
-              <div class="row">
-                <div class="col-xl-12">
-            <div class="recipe-images">
-              <img class="img-fluid" src="../app/img/Chili.jpg" width="160px"  alt="Chilli Con Carne">
-              <img class="img-fluid" src="../app/img/felafal.jpg"   width="160px" alt="Felafel">
-              <img class="img-fluid" src="../app/img/Penne.jpg"   width="160px" alt="Pasta with Tomato Sauce">
-              <img class="img-fluid" src="../app/img/guacamole.jpg"   width="160px"  alt="Guacamole">
-              <img class="img-fluid" src="../app/img/chillimix.jpg"   width="160px"  alt="Chilli Spice Mix">
-            </div>
-            </div>
-            </div>
-            </div>
         </div>
       </div>
-    </div>
-    </article>
-  </main>
+      </article>
+    </main>
 
   </div>
 

@@ -1,13 +1,16 @@
-.menu, li {
-  display:flex;
-  flex-direction: row;
-  list-style: none;
+#main-image, #main-logo {
+  display: block;
+  margin: 0 auto
 }
-.submenu {
-  display: flex;
-  flex-direction: column;
-  display: none;
-}
+
 .recipe-text {
   column-count: 2;
+}
+
+#chilli:hover, #felafal:hover, #pasta:hover, #guac:hover, #spicemix:hover {
+  transform: scale(1.5);
+}
+
+.recipe-images {
+  align-content: space-around;
 }
