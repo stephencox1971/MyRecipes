@@ -1,16 +1,69 @@
+.dropdown-item {
+  padding-left: -3px;
+  padding-right: -3px;
+}
+.dropdown-item:hover {
+    background-color: #ebf8df;
+}
+
 #main-image, #main-logo {
   display: block;
   margin: 0 auto
+}
+
+#main-image {
+  padding: 0.25em;
+  border: 2px solid black;
+}
+
+hr {
+background-color: green;
+/* color: green; */
+border: solid 1px green;
 }
 
 .recipe-text {
   column-count: 2;
 }
 
+.Image-Row {
+  text-align: center;
+}
+
 #chilli:hover, #felafal:hover, #pasta:hover, #guac:hover, #spicemix:hover {
   transform: scale(1.5);
 }
 
+#chilli, #felafal, #pasta, #guac, #spicemix {
+  padding: 0.25em;
+  border: 2px solid black;
+  background-color: white;
+}
+
 .recipe-images {
   align-content: space-around;
+}
+
+.nav a {
+  color: black;
+}
+
+.nav a:hover {
+  color: #inherit7eff04;
+  text-shadow: #7eff04 1px 0 7px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 5em;
+  font-size: smaller;
+}
+
+@media only screen and (max-width:600px) {
+  .recipe-text {
+    column-count: 1;
+  }
+  .recipe-images {
+    display:none;
+  }
 }
