@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>My Recipes</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../app/styles/main.css">
 </head>
 <!-- Images from Wikimedia pxhere.com and pxe.org TODO Replace with own images. Replace Lorem with own copy. Add Script to load copy from templates-->
@@ -39,10 +40,26 @@ HEADER
                 <a class="nav-link" href="#">Blog</a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" id="About" href="#">About</a>
+                <a class="nav-link" data-toggle="modal" data-target="#aboutModal">About</a>
+                <!-- Modal -->
+<div class="modal fade" id="aboutModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">About</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid float-right about-image" src="../app/img/scox_sunglasses.jpg" width="100px" alt="About">
+        <p>Welcome to My Recipes - a collection of my favourite recipes for your perusal and enjoyment.<p>
+      </div>
+    </div>
+  </div>
+</div>
               </li>
-            </ul>
-            <!-- <img class="img-fluid float-right about-image" src="../app/img/scox_sunglasses.jpg" width="100px" alt="About"> -->
+            </ul
           </nav>
         </div>
       </div>
@@ -63,7 +80,7 @@ MAIN CONTENT
               <img class="img-fluid" id="main-image" src="../app/img/main.jpg" width="600px" alt="Chillis and Garlic">
               <h1 class="text-center">Recipe of the Day</h1>
               <div id="recipe-template">
-                <h2 class="text-center">Chilli Con Carne</h2>
+                <!-- <h2 class="text-center">Chilli Con Carne</h2>
                 <div class="recipe-text">
                   <h3 class="text-center">Ingredients</h3>
                   <ul class="recipe-ingredients">
@@ -78,7 +95,7 @@ MAIN CONTENT
                   <h3 class="text-center">Instructions</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
+                </div> -->
               </div>
               <hr>
               <div class="container Image-Row">
@@ -110,7 +127,7 @@ FOOTER
     <div class="container">
       <div class "row">
         <div class="col-md-12">
-          <p>My Recipes cannot be held responsible for whatever happens to you as a direct or indirect result of what you read on this website.
+          <p><em>Legal: </em>My Recipes cannot be held responsible for whatever happens to you as a direct or indirect result of what you read on this website.
           </p>
         </div>
       </div>

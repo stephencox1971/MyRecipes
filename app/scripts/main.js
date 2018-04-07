@@ -1,4 +1,7 @@
+
+
 //All Lorem text from pan-ipsum
+//TODO - replace these with loadable templates
 
 let chilliText = `<h2 class="text-center">Chilli Con Carne</h2>
 <div class="recipe-text">
