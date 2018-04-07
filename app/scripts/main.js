@@ -1,5 +1,3 @@
-
-
 //All Lorem text from pan-ipsum
 //TODO - replace these with loadable templates
 
@@ -24,14 +22,10 @@ let chilliText = `<h2 class="text-center">Chilli Con Carne</h2>
 document.getElementById("recipe-chilli").addEventListener("click", replaceChilli);
 
 function replaceChilli() {
-    document.getElementById("recipe-template").innerHTML = chilliText;
+  document.getElementById("recipe-template").innerHTML = chilliText;
 }
 
-document.getElementById("goHome").addEventListener("click", reLoadHome);
 
-function reLoadHome() {
-    document.getElementById("recipe-template").innerHTML = chilliText;
-}
 
 let felafalText = `<h2 class="text-center">Felafal</h2>
 <div class="recipe-text">
@@ -53,7 +47,7 @@ let felafalText = `<h2 class="text-center">Felafal</h2>
 document.getElementById("recipe-felafal").addEventListener("click", replaceFelafal);
 
 function replaceFelafal() {
-    document.getElementById("recipe-template").innerHTML = felafalText;
+  document.getElementById("recipe-template").innerHTML = felafalText;
 }
 
 let pastaText = `<h2 class="text-center">Pasta With Tomato Sauce</h2>
@@ -76,7 +70,7 @@ let pastaText = `<h2 class="text-center">Pasta With Tomato Sauce</h2>
 document.getElementById("recipe-pasta").addEventListener("click", replacePasta);
 
 function replacePasta() {
-    document.getElementById("recipe-template").innerHTML = pastaText;
+  document.getElementById("recipe-template").innerHTML = pastaText;
 }
 
 let guacamoleText = `<h2 class="text-center">Guacamole</h2>
@@ -99,7 +93,7 @@ let guacamoleText = `<h2 class="text-center">Guacamole</h2>
 document.getElementById("recipe-guac").addEventListener("click", replaceGuac);
 
 function replaceGuac() {
-    document.getElementById("recipe-template").innerHTML = guacamoleText;
+  document.getElementById("recipe-template").innerHTML = guacamoleText;
 }
 
 let spiceMixText = `<h2 class="text-center">Chilli Spice Mix</h2>
@@ -122,5 +116,28 @@ let spiceMixText = `<h2 class="text-center">Chilli Spice Mix</h2>
 document.getElementById("recipe-spicemix").addEventListener("click", replaceSpiceMix);
 
 function replaceSpiceMix() {
-    document.getElementById("recipe-template").innerHTML = spiceMixText;
+  document.getElementById("recipe-template").innerHTML = spiceMixText;
 }
+
+//Load a random recipe when the page is refreshed.
+document.onload=randomRecipe();
+function randomRecipe() {
+  var myRandom = Math.floor((Math.random() * 5) + 1);
+  if (myRandom === 1) {
+    replaceChilli();
+  } else if (myRandom === 2) {
+    replaceFelafal();
+  } else if (myRandom === 3) {
+    replacePasta();
+  } else if (myRandom === 4) {
+    replaceGuac();
+  } else {
+    replaceSpiceMix();
+  }
+}
+
+document.getElementById("goHome").addEventListener("click", randomRecipe);
+
+// function reLoadHome() {
+//   document.getElementById("recipe-template").innerHTML = chilliText;
+// }
