@@ -5,6 +5,10 @@
 .dropdown-item:hover {
     background-color: #ebf8df;
 }
+.about-image {
+  border-radius: 50%;
+  vertical-align: top;
+}
 
 #main-image, #main-logo {
   display: block;
@@ -24,6 +28,10 @@ border: solid 1px green;
 
 .recipe-text {
   column-count: 2;
+}
+
+.recipe-ingredients {
+  list-style-type: none;
 }
 
 .Image-Row {

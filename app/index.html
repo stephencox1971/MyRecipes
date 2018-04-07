@@ -28,11 +28,11 @@ HEADER
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Recipes</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item " href="#">Chilli Con Carne</a>
-                  <a class="dropdown-item" href="#">Felafal</a>
-                  <a class="dropdown-item" href="#">Pasta With Tomato Sauce</a>
-                  <a class="dropdown-item" href="#">Guacamole</a>
-                  <a class="dropdown-item" href="#">Chilli Spice Mix</a>
+                  <a class="dropdown-item" id="recipe-chilli" href="#">Chilli Con Carne</a>
+                  <a class="dropdown-item" id="recipe-felafal" href="#">Felafal</a>
+                  <a class="dropdown-item" id="recipe-pasta" href="#">Pasta With Tomato Sauce</a>
+                  <a class="dropdown-item" id="recipe-guac" href="#">Guacamole</a>
+                  <a class="dropdown-item" id="recipe-spicemix" href="#">Chilli Spice Mix</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -42,11 +42,12 @@ HEADER
                 <a class="nav-link" id="About" href="#">About</a>
               </li>
             </ul>
+            <!-- <img class="img-fluid float-right about-image" src="../app/img/scox_sunglasses.jpg" width="100px" alt="About"> -->
           </nav>
         </div>
       </div>
     </header>
-
+    <hr>
     <!--*********************************************************
 MAIN CONTENT
 **********************************************************-->
@@ -56,15 +57,22 @@ MAIN CONTENT
         <div class="row">
           <div class="col-xl-12">
             <article>
-              <hr>
-              <img class="img-fluid" id="main-image" src="../app/img/main.jpg" width="600px" alt="Chillis and Garlic">
 
-              <div class="recipe-copy" id="Recipe=Copy">
+              <img class="img-fluid" id="main-image" src="../app/img/main.jpg" width="600px" alt="Chillis and Garlic">
+              <h1 class="text-center">Recipe of the Day</h1>
+              <div id="recipe-template">
                 <h2 class="text-center">Chilli Con Carne</h2>
                 <div class="recipe-text">
                   <h3 class="text-center">Ingredients</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <ul class="recipe-ingredients">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>consectetur adipisicing elit</li>
+                    <li>sed do eiusmod tempor incididunt</li>
+                    <li>ut labore et dolore magna aliqua</li>
+                    <li>Ut enim ad minim veniam</li>
+                    <li>quis nostrud exercitation</li>
+                    <li>ullamco laboris nisi</li>
+                  </ul>
                   <h3 class="text-center">Instructions</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -79,7 +87,7 @@ MAIN CONTENT
                       <img class="img-fluid" id="felafal" src="../app/img/felafal.jpg" width="160px" alt="Felafel">
                       <img class="img-fluid" id="pasta" src="../app/img/Penne.jpg" width="160px" alt="Pasta with Tomato Sauce">
                       <img class="img-fluid" id="guac" src="../app/img/guacamole.jpg" width="160px" alt="Guacamole">
-                      <img class="img-fluid" id ="spicemix" src="../app/img/chillimix.jpg" width="160px" alt="Chilli Spice Mix">
+                      <img class="img-fluid" id="spicemix" src="../app/img/chillimix.jpg" width="160px" alt="Chilli Spice Mix">
                     </div>
                   </div>
                 </div>
@@ -111,6 +119,8 @@ FOOTER
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="../app/scripts/main.js"></script>
 </body>
 
 </html>
